@@ -1,0 +1,153 @@
+input,button,a{
+border-radius: 8px;
+
+ }
+ *{
+    padding: 0;
+    margin: 0;
+}
+ body{
+    height: 100vh;
+    
+ }
+ h1{
+    text-align: center;
+    height: 60px;
+    align-content: center;
+    background-color: #333333;;
+    color: white;
+ }
+.container{
+    display:flex;
+    flex-direction: column;
+    height: 100%;
+}
+#footer{
+    position: relative;
+    bottom: 20px;
+    width: 100%;
+    margin:50px 0;
+    text-align: center;
+}
+#ulTopBar{
+    display: flex;
+    flex-direction: row;
+    background-color: #444444;
+    width: 100%;
+    list-style: none;
+    height: 40px;
+text-align: center;
+    
+}
+#ulTopBar a{
+text-decoration: none;
+color: white;
+height: 100%;
+margin: 0 10px;
+align-content: center;
+
+}
+.Content{
+    width: 80%;
+    align-content: center;
+    align-items: center;
+    display: flex;
+    margin: auto;
+    flex-direction: column;
+}
+.CRUDS{
+    margin: 10px 0;
+    width: 99%;
+    display: flex;
+    flex-direction: column;
+}
+.CRUDS *{
+    margin: 5px 0;
+    padding: 5px;
+}
+
+/* #info *{
+    
+} */
+#SearchByTitleOrCategory{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+#SearchByTitleOrCategory *{
+    width: 49%;
+}
+
+#ulTopBar a:hover{
+    background-color: #ddd;
+    color: black;
+}
+button:hover{
+    background-color: #747373;
+}
+h2{
+   
+    text-align: center;
+}
+.Products{
+    width: 100%;
+   text-align: left;
+}
+#table{
+    width: 90%;
+   margin: auto;
+ 
+}
+th,td{
+    padding: 5px;
+}
+th{
+    text-transform: uppercase;
+}
+tr:nth-child(even){background-color: #f2f2f2;}
+.AA{
+  
+    display: inline-block;
+    width:18%;
+    text-align: center;
+    margin: auto;
+}
+#info{
+    text-align: center;
+}
+.AA *{
+   display: block;
+   width: 80%;
+   margin: auto;
+}
+.BB{
+    text-align: center;
+}
+.BB label{
+    display: inline-block;
+    width: 100px;
+}
+.BB input{
+    width: 50%;
+}
+.Current{
+    background-color: red;;
+}
+
+tr:hover{
+    background-color: #4f4b4b;
+    color: white;  
+     transform: scale(1.01);
+}
+
+tr{
+    border-radius: 20px;
+
+     
+}
+.DeleteAll{
+    width: 100%;
+}
+input:focus{
+    transform: scale(1.1);
+}

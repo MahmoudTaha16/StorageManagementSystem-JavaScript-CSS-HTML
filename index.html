@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Storage Management</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body onload="OnLoadBody()">
+  <div class="container">
+      <header id="header">
+        <h1>Storage Management System</h1>
+        <div id="#topBar">
+          <div id="ulTopBar">
+           <a href="#" id="home">Home</a>
+           <a href="#" id="DashBoard">DashBoard</a>
+           <a href="#" id="Settings">Settings</a>
+          </div>
+        </div>
+      </header>
+
+
+      <div class="Content">
+        <div class="CRUDS" id="CRUDS">
+          <div id="IdValue"></div>
+          <input  type="text" id="Title" placeholder="Title">
+          <div id="info">
+            <div class="AA">
+              <label>Price:</label>
+              <input onkeyup="CalculateTotal()"  type="number" id="Price" placeholder="Price">
+            </div>
+            <div class="AA">
+              <label>Taxes:</label>
+              <input onkeyup="CalculateTotal()" type="number" id="Taxes" placeholder="Taxes">
+            </div>
+           <div class="AA">
+            <label>Ads:</label>
+            <input onkeyup="CalculateTotal()" type="number" id="Ads" placeholder="Ads">
+           </div class="AA">
+           <div class="AA">
+            <label>Discount:</label>
+            <input onkeyup="CalculateTotal()" type="number" id="Discount" placeholder="Discount">
+           </div>
+            <div class="AA">
+              <label>Total:</label>
+              <input onkeyup="CalculateTotal()" type="text" id="Total" placeholder="Total:" readonly>
+            </div>
+           
+          </div>
+          <div class="BB">
+            <label>Count:</label>
+            <input type="number" id="Count" placeholder="Count">
+          </div>
+          
+          <div class="BB">
+            <label>Category:</label>
+            <input type="text" id="Category" placeholder="Category">
+          </div>
+          
+          <button id="Create"  onclick="CreateOrUpdate(this)">Create</button>
+          <input type="text" onkeyup="SearchInTitleOrCategory()" id="Search" placeholder="Search">
+  
+          <div id="SearchByTitleOrCategory">
+            <button id="SearchByTitle" class="Current" onclick="Toggle(this)">Search By Title</button>
+            <button id="SearchByCategory"  onclick="Toggle(this)">Search By Category</button>
+           
+          </div>
+          <div id="DeleteAll" class="DeleteAll"></div>
+          <div class=""> 
+            <button id="ss"  onclick="FillData()">Add Random Data</button>
+          </div>
+        </div>
+
+<div class="Products">
+  <h2>Products</h2>
+  <table id="table">
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Title</th>
+        <th>price</th>
+        <th>taxes</th>
+        <th>Ads</th>
+        <th>discount</th>
+        <th>total</th>
+        <th>Count</th>
+        <th>category</th>
+        <th>update</th>
+        <th>delete</th>
+      </tr>
+    </thead>
+    <tbody id="tbody" >
+      <tr>
+        <td>1</td>
+        <td>Samsung</td>
+        <td>100$</td>
+        <td>12</td>
+        <td>234</td>
+        <td>32</td>
+        <td>6754</td>
+        <td>Phone</td>
+        <td>update</td>
+        <td>delete</td>
+      </tr>
+     
+
+    </tbody>
+  </table>
+</div>
+
+      
+
+      <footer id="footer">
+          <p>&copy; 2023 Storage Management System</p>
+      </footer>
+      
+  </div>
+   <script src="main.js"></script>
+   <script src="DataAccessLayer.js"></script>
+   <script src="BusinessLayer.js"></script>
+   <script src="ProductObject.js"></script>
+</body>
+</html>
